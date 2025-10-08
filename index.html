@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panadería Dulce Sabor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        .overlay {
+            background: rgba(0,0,0,0.5);
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0; left: 0;
+            z-index: 1;
+        }
+        header {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 60px 0 60px;
+        }
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        .cta-section {
+            position: relative;
+            z-index: 2;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .cta-title {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px #000;
+        }
+        .cta-desc {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 6px #000;
+        }
+        .cta-btn {
+            background: #ffd700;
+            color: #333;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 2px 2px 8px #222;
+            transition: background 0.2s, color 0.2s;
+        }
+        .cta-btn:hover {
+            background: #fff;
+            color: #b8860b;
+        }
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .cta-title {
+                font-size: 2em;
+            }
+            .cta-desc {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="logo">Dulce Sabor</div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Panadería</a></li>
+                <li><a href="#">Pastelería</a></li>
+                <li><a href="#">Dulces</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="cta-section">
+        <h1 class="cta-title">¡Bienvenido a Dulce Sabor!</h1>
+        <p class="cta-desc">Descubre nuestros panes artesanales, pasteles irresistibles y dulces únicos.<br>¡Haz tu pedido hoy y endulza tu día!</p>
+        <a href="#" class="cta-btn">Haz tu pedido</a>
+    </section>
+</body>
